@@ -29,7 +29,7 @@ public class PluginManagerCommand implements CommandExecutor, TabCompleter {
                     return true;
                 }
                 Plugin plugin = Bukkit.getPluginManager().getPlugin(args[1]);
-                sender.sendMessage("§bPlugin info: \n-  §aName: §6" + plugin.getName() + "§b-   §aDescription: §6" + plugin.getDescription().getDescription() + "\n§b-   §aEnabled: §6" + plugin.isEnabled());
+                sender.sendMessage("§bPlugin info: \n-  §aName: §6" + plugin.getName() + "\n§b-   §aDescription: §6" + plugin.getDescription().getDescription() + "\n§b-   §aEnabled: §6" + plugin.isEnabled());
                 return true;
             }
             if(args[0].equalsIgnoreCase("reload")){
