@@ -1,0 +1,9 @@
+name: PluginManager
+version: '${project.version}'
+main: com.tintingpatch.pluginmanager.PluginManager
+api-version: 1.19
+authors: [ TintingPatch ]
+
+commands:
+  pluginmanager:
+    permission: "pluginmanager.use"
